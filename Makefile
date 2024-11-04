@@ -3,7 +3,7 @@ all: build
 build: server subscriber
 
 server: 
-	gcc rezervaserverrezerva.c -o server -lm
+	gcc server.c -o server -lm
 
 subscriber:
 	gcc subscriber.c -o subscriber
