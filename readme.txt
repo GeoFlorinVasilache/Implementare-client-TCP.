@@ -1,4 +1,4 @@
-Ca sa fac tema mai intai am avut nevoie de 3 socketi principali in server si anume unul de stdin unul pentru clinetii tcp de ascultare adica cel pe care
+Am avut nevoie de 3 socketi principali in server si anume unul de stdin unul pentru clinetii tcp de ascultare adica cel pe care
 vor venii conexiunile tcp si unul de udp , pentru clientii de udp . Pentru clinetii de tcp am considerat ca este nevoie de cate
 un socket pentru fiecare client dar pentru udp nu pentru ca nu trebuia sa le dau nimic inapoi deci nu trebuia sa creez un canal de conexiune cu ei.Oricum prin udp nu se creeaza
 conexiune client server. Am avut nevoie de o struct pollfd pentru , ujn vector de acest tip alocat si realocat dinamic .Iar in cazul in care in server primeam ceva pe socketul de listen
